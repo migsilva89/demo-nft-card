@@ -50,6 +50,37 @@ body {
     font-size: 25px;
 }
 
+.container h2:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+.container .square {
+    position: relative;
+}
+.container .square div {
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    border-radius: 01rem 1rem 1rem 1rem;
+}
+
+.container .square div:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 01rem 1rem 1rem 1rem;
+}
+.container .square div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .container article div p {
     color: var(--soft-blue);
     font-weight: 100;
@@ -94,6 +125,10 @@ body {
 .container p span {
     color: var(--white);
     font-weight: 800;
+}
+.container p span:hover {
+    color: var(--cyan);
+    cursor: pointer;
 }
 
 .container .avatar p {

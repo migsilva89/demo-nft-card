@@ -25,10 +25,6 @@ ul {
     --white: hsl(0, 0%, 100%);
 }
 
-p {
-    font-weight: 300;
-}
-
 body {
     font-family: "Outfit", sans-serif;
     font-size: 18px;
@@ -40,12 +36,18 @@ body {
 .container {
     padding: 1.25rem;
     background-color: var(--card-bg);
-    border-radius: 01rem 0.5rem 0.5rem 0;
+    border-radius: 01rem 1rem 1rem 1rem;
 }
 
 .container h2 {
     color: var(--white);
-    margin: 0;
+    margin: 1rem 0.5rem 0.5rem 0;
+    font-size: 25px;
+}
+.container article div p {
+    color: var(--soft-blue);
+    font-weight: 100;
+    font-size: 16px;
 }
 
 .container ul li {
@@ -83,6 +85,14 @@ body {
     margin-right: 1rem;
 }
 
+.container p span {
+    color: var(--white);
+    font-weight: 800;
+}
+.container .avatar p {
+    font-weight: 100;
+    color: var(--soft-blue);
+}
 .attribution {
     font-size: 12px;
     text-align: center;
